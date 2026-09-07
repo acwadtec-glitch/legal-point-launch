@@ -71,7 +71,7 @@ export function Hero() {
             />
           </div>
           <div className="absolute bottom-6 start-6 end-6 rounded-xl border border-gold/25 bg-background/92 p-4 backdrop-blur-md sm:start-[-1.5rem] sm:end-auto sm:max-w-[15rem]">
-            <p className="text-2xl font-extrabold text-primary">10+</p>
+            <p className="text-2xl font-extrabold text-primary" dir="ltr">10+</p>
             <p className="mt-1 text-xs font-medium tracking-wide text-muted-foreground">
               {isAr ? "سنوات من الخبرة القانونية" : "Years of legal experience"}
 
