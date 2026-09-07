@@ -16,13 +16,11 @@ export function WhyUs() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {why.items.map((item, i) => {
             const Icon = icons[i] ?? ShieldCheck;
-            const wide = i >= 3;
             return (
               <Reveal
                 as="article"
                 key={item.title}
                 delay={(i % 3) * 80}
-                className={wide ? "lg:col-span-1.5" : undefined}
               >
                 <div className="card-elevated h-full bg-background p-7">
                   <div className="flex items-center gap-3">

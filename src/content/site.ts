@@ -435,4 +435,4 @@ export const t = {
   },
 };
 
-export type Copy = (typeof t)["en"];
+export type Copy = Omit<(typeof t)["en"], "dir"> & { dir: "rtl" | "ltr" };

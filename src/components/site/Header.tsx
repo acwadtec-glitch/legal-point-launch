@@ -80,7 +80,7 @@ export function Header() {
       <div className="section-shell flex items-center justify-between gap-4">
         <Logo />
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label={copy.nav[0].label}>
+        <nav className="hidden items-center gap-1 lg:flex" aria-label={copy.menu}>
           {copy.nav.map((item) => (
             <a
               key={item.id}

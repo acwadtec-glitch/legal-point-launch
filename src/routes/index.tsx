@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const { copy } = useI18n();
+  const { isAr } = useI18n();
 
   return (
     <div className="min-h-screen bg-background">
@@ -72,7 +72,7 @@ function Index() {
         <Contact />
       </main>
       <Footer />
-      <Toaster position={copy.dir === "rtl" ? "top-left" : "top-right"} />
+      <Toaster position={isAr ? "top-left" : "top-right"} />
     </div>
   );
 }
