@@ -5,8 +5,9 @@ import { Reveal } from "@/components/site/Reveal";
 import heroImage from "@/assets/hero-legal.jpg";
 
 export function Hero() {
-  const { copy } = useI18n();
+  const { copy, isAr } = useI18n();
   const { hero } = copy;
+
 
   return (
     <section id="home" className="relative overflow-hidden bg-background pt-28 lg:pt-32">
