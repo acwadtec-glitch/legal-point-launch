@@ -41,8 +41,15 @@ export function Reveal({
   return (
     <Component
       ref={ref}
-      style={{ transitionDelay: `${delay}ms` }}
-      className={cn("reveal", shown && "reveal-in", className)}
+      style={{
+        transitionDelay: `${delay}ms`,
+        transitionProperty: "opacity, transform",
+        transitionDuration: "700ms",
+        transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
+        opacity: shown ? 1 : 0,
+        transform: shown ? "none" : "translateY(22px)",
+      }}
+      className={cn(className)}
     >
       {children}
     </Component>
